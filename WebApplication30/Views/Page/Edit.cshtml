@@ -1,0 +1,14 @@
+﻿@* Views/Page/Edit.cshtml *@
+@{
+    ViewData["Title"] = "Редактирование";
+}
+
+<h1>Форма редактирования</h1>
+
+<form method="post" asp-action="Edit">
+    <div class="form-group">
+        <label for="message">Сообщение:</label>
+        <input type="text" class="form-control" id="message" name="message" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Отправить</button>
+</form>
